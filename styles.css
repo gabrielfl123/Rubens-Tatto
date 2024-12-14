@@ -1,0 +1,310 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #f5f5f5;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Header e Navegação */
+  .site-header {
+    background-color: #222;
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar .logo h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-left: 20px;
+  }
+  
+  .navbar ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #f9a826; /* Cor de destaque ao passar o mouse */
+  }
+  
+  /* Seção Hero (Home) */
+ /* Estilo da seção Home */
+ #home {
+    flex: 2; /* A seção home vai ocupar o restante do espaço */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Distribui o conteúdo verticalmente */
+    align-items: center; /* Alinha o conteúdo horizontalmente */
+    text-align: center;
+    height: 500px; /* Defina uma altura fixa ou ajustável */
+  }
+  
+  /* Título */
+  .hero h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px; /* Espaço entre o título e o parágrafo */
+  }
+  
+  /* Parágrafo */
+  .hero p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px; /* Espaço entre o parágrafo e o botão */
+  }
+  
+  /* Botão */
+  .hero .btn {
+    padding: 10px 20px;
+    background-color: #f9a826;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .hero .btn:hover {
+    background-color: #25D366;
+  }
+  
+  /* Seção Sobre */
+  #sobre {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  #sobre h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #sobre p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Seção Galeria */
+  #galeria {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  #galeria h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .gallery-item {
+    overflow: hidden;
+    border: 2px solid #333;
+    border-radius: 15px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  
+  /* Seção Contato */
+  #contato {
+    background-color: #222;
+    color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  #contato h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #contato p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  #contato .btn {
+    padding: 10px 20px;
+    background-color: #f9a826;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  #contato .btn:hover {
+    background-color: #25D366;
+  }
+  
+  /* Footer */
+  #footer {
+    background-color: #222;
+    color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #333;
+  }
+  
+  .footer-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    color: #f5f5f5;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #f9a826;
+  }
+  
+  /* Responsividade */
+  @media screen and (max-width: 768px) {
+    .hero h2 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .footer-content p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* foto do rubim */
+  
+  /* Container para alinhar a foto e a home */
+  #foto-tatuador-home-container {
+    display: flex;
+    align-items: center; /* Alinha a foto e o conteúdo da home verticalmente */
+    justify-content: space-between; /* Dá espaço entre os dois itens */
+    gap: 40px; /* Espaço entre a foto e o conteúdo */
+    padding: 40px 20px;
+  }
+  
+  /* Estilo da foto do tatuador */
+  #foto-tatuador {
+    flex: 1; /* A foto vai ocupar 50% do espaço */
+    text-align: center;
+  }
+  
+  .foto-container {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden; /* Faz com que a borda se ajuste à imagem */
+  }
+  
+  /* Estilo da imagem */
+  .foto-container img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 5px solid #242424;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Efeito de borda e transformação da imagem */
+  .foto-container:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05); /* Aumenta ligeiramente a foto */
+  }
+  
+  .foto-container:hover img {
+    transform: scale(1.1); /* Aumenta um pouco a imagem ao passar o mouse */
+  }
+  
+  /* Animação de borda ao carregar */
+  .foto-container {
+    animation: bordaAnimada 3s infinite alternate;
+  }
+  
+  @keyframes bordaAnimada {
+    0% {
+      border: 5px solid #ff7f50; /* Cor da borda inicial */
+    }
+    50% {
+      border: 5px solid #ff4500; /* Cor da borda no meio da animação */
+    }
+    100% {
+      border: 5px solid #ff6347; /* Cor da borda final da animação */
+    }
+  }
+  
+  
+  
+  
