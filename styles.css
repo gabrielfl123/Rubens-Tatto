@@ -8,7 +8,7 @@
   /* Corpo da página */
   body {
     font-family: 'Arial', sans-serif;
-    background-color: #111;
+    background-color: black;
     color: #f5f5f5;
     line-height: 1.6;
     overflow-x: hidden;
@@ -87,7 +87,7 @@
   /* Botão */
   .hero .btn {
     padding: 10px 20px;
-    background-color: #f9a826;
+    background-color: #26f93b;
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
@@ -270,11 +270,11 @@
   
   /* Estilo da imagem */
   .foto-container img {
-    width: 300px;
+    width: 350px;
     height: 500px;
     object-fit: cover;
     border-radius: 10%;
-    border: 5px solid #242424;
+    border: 5px solid black;
     transition: transform 0.3s ease;
   }
   
@@ -295,13 +295,13 @@
   
   @keyframes bordaAnimada {
     0% {
-      border: 5px solid #ff7f50; /* Cor da borda inicial */
+      border: 5px solid rgb(11, 11, 11); /* Cor da borda inicial */
     }
     50% {
-      border: 5px solid #ff4500; /* Cor da borda no meio da animação */
+      border: 5px solid #0b0b0b; /* Cor da borda no meio da animação */
     }
     100% {
-      border: 5px solid #ff6347; /* Cor da borda final da animação */
+      border: 5px solid #141313; /* Cor da borda final da animação */
     }
   }
   
