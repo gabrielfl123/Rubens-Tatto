@@ -56,35 +56,31 @@
   }
   
   /* Seção Hero (Home) */
- /* Estilo da seção Home */
- #home {
-    flex: 2; /* A seção home vai ocupar o restante do espaço */
+  #home {
+    flex: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Distribui o conteúdo verticalmente */
-    align-items: center; /* Alinha o conteúdo horizontalmente */
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    height: 500px; /* Defina uma altura fixa ou ajustável */
+    height: 500px;
   }
   
-  /* Título */
   .hero h2 {
     font-family: 'Cinzel', serif;
     font-size: 3rem;
     color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    margin-bottom: 20px; /* Espaço entre o título e o parágrafo */
+    margin-bottom: 20px;
   }
   
-  /* Parágrafo */
   .hero p {
     font-size: 1.5rem;
     color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    margin-bottom: 20px; /* Espaço entre o parágrafo e o botão */
+    margin-bottom: 20px;
   }
   
-  /* Botão */
   .hero .btn {
     padding: 10px 20px;
     background-color: #26f93b;
@@ -215,6 +211,7 @@
   
   /* Responsividade */
   @media screen and (max-width: 768px) {
+    /* Ajuste do título */
     .hero h2 {
       font-size: 2rem;
     }
@@ -223,6 +220,7 @@
       font-size: 1rem;
     }
   
+    /* Navegação */
     .navbar ul {
       flex-direction: column;
       align-items: center;
@@ -232,29 +230,46 @@
       margin: 10px 0;
     }
   
+    /* Galeria */
     .gallery {
       grid-template-columns: 1fr 1fr;
     }
   
+    /* Footer */
     .footer-content p {
       font-size: 0.9rem;
     }
+  
+    /* Foto do tatuador */
+    #foto-tatuador-home-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .foto-container img {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Ajuste do padding */
+    #foto-tatuador {
+      flex: 1;
+      text-align: center;
+      margin-bottom: 20px;
+    }
   }
   
-  /* foto do rubim */
-  
-  /* Container para alinhar a foto e a home */
+  /* Foto do rubim */
   #foto-tatuador-home-container {
     display: flex;
-    align-items: center; /* Alinha a foto e o conteúdo da home verticalmente */
-    justify-content: space-between; /* Dá espaço entre os dois itens */
-    gap: 40px; /* Espaço entre a foto e o conteúdo */
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
     padding: 40px 20px;
   }
   
-  /* Estilo da foto do tatuador */
   #foto-tatuador {
-    flex: 1; /* A foto vai ocupar 50% do espaço */
+    flex: 1;
     text-align: center;
   }
   
@@ -265,10 +280,9 @@
     border-radius: 10%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
-    overflow: hidden; /* Faz com que a borda se ajuste à imagem */
+    overflow: hidden;
   }
   
-  /* Estilo da imagem */
   .foto-container img {
     width: 350px;
     height: 500px;
@@ -278,33 +292,28 @@
     transition: transform 0.3s ease;
   }
   
-  /* Efeito de borda e transformação da imagem */
   .foto-container:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    transform: scale(1.05); /* Aumenta ligeiramente a foto */
+    transform: scale(1.05);
   }
   
   .foto-container:hover img {
-    transform: scale(1.1); /* Aumenta um pouco a imagem ao passar o mouse */
+    transform: scale(1.1);
   }
   
-  /* Animação de borda ao carregar */
   .foto-container {
     animation: bordaAnimada 3s infinite alternate;
   }
   
   @keyframes bordaAnimada {
     0% {
-      border: 5px solid rgb(11, 11, 11); /* Cor da borda inicial */
+      border: 5px solid rgb(11, 11, 11);
     }
     50% {
-      border: 5px solid #0b0b0b; /* Cor da borda no meio da animação */
+      border: 5px solid #0b0b0b;
     }
     100% {
-      border: 5px solid #141313; /* Cor da borda final da animação */
+      border: 5px solid #141313;
     }
   }
-  
-  
-  
   
