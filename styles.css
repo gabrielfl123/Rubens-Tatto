@@ -1,4 +1,18 @@
-/* Resetando margens e paddings */
+@font-face {
+  font-family: 'Cantara Gotica';
+  src: url('fonts/CantaraGotica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.aaaa{
+  font-family: 'Cantara Gotica', serif;
+}
+
+.logo {
+  font-family: 'Cantara Gotica', serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +21,9 @@
   
   /* Corpo da página */
   body {
-    font-family: 'Arial', sans-serif;
+    
+    font-size: large;
+    margin: 1px;
     background-color: black;
     color: #f5f5f5;
     line-height: 1.6;
@@ -18,20 +34,26 @@
   .site-header {
     background-color: #222;
     padding: 20px 0;
+    font-family: 'CantaraGotica', sans-serif;
+    font-size: 1.5rem;
+
+    
   }
+ 
   
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
+   
     margin: 0 auto;
     padding: 0 20px;
   }
   
   .navbar .logo h1 {
-    font-family: 'Cinzel', serif;
-    font-size: 2rem;
+    
+    font-size: 3rem;
     color: #fff;
   }
   
@@ -57,7 +79,7 @@
   
   /* Seção Hero (Home) */
   #home {
-    flex: 2;
+    flex: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,7 +89,7 @@
   }
   
   .hero h2 {
-    font-family: 'Cinzel', serif;
+    
     font-size: 3rem;
     color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
